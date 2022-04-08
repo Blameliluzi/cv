@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        
+        .contactDeets{
+            margin-bottom: 10px;
+        }
+        #nameOfUser.contactDeets{
+            ;
+        }
+        #userEmail.contactDeets{
+            ;
+        }
+
+        #userMessage.contactDeets *{
+            vertical-align: middle;
+        }
+        legend{
+            border-style: solid;
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        fieldset{
+            border: 5px solid white;
+            box-sizing: border-box;
+            height: auto;
+            width: 1000px;
+        }
+        textarea{
+            margin-top: 10px;
+            box-sizing: content-box;
+            height: 200px;
+        }
+        .goBack{
+            margin-left: 1200px;
+            border-style: solid;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        body{
+            background-color: rgb(33, 25, 25);
+            color: white;
+        }
+        #submit{
+            background-color: white;
+            color: purple;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+   <h1>My Contact Details</h1>
+   
+   <table>
+    <!--TABLE CONTAINING CONTACT INFO-->
+    
+    <!--TABLE CONTAINING ADDRESS-->
+        <tr>
+           <td>
+            <ul>
+                <li>
+                    <h3><u>My fictional address:</u></h3>
+                </li>
+            </ul>
+           </td>
+           <td>
+               1234 Fictional Drive
+           </td>
+       </tr>
+       <!-------------------------------------------------------------------------->
+
+       <!--TABLE CONTAINING PHONE NUMBER-->
+       <tr>
+        <td>
+         <ul>
+             <li>
+                 <h3><u>My fictional number:</u></h3>
+             </li>
+         </ul>
+        </td>
+        <td>
+            123-456-7890
+        </td>
+    </tr>
+    <!-------------------------------------------------------------------------------->
+
+    <!--TABLE CONTAINING EMAIL-->
+    <tr>
+        <td>
+         <ul>
+             <li>
+                 <h3><u>My fictional email:</u></h3>
+             </li>
+         </ul>
+        </td>
+        <td>
+            bigFake123@somesite.com
+        </td>
+    </tr>
+    <!---------------------------------------------------------------------------->
+   </table>
+   <!-----------------------------TABLE DONE------------------------------------------------>
+
+
+
+
+   <!--FORM THAT WILL ASK THE USER TO ENTER THEIR NAME, EMAIL, AND DESIRED MESSAGE-->
+   <form action = "mailto:natelion06@gmail.com?subject=Webpage%20Message&body=%0Aid=message" method="post" enctype="text/plain">
+       <fieldset>
+           <legend>Enter your contact details and desired message</legend>
+
+           <!--Ask for name of user-->
+           <div class="contactDeets" id="nameOfUser">
+                <label for="name">Enter your Name:</label>
+                <input type="text" id="name" required placeholder="John Doe">
+            </div>
+           <!----------------------------------------------------------->
+        
+           <!--Ask for email of user-->
+           <div class="contactDeets" id="userEmail">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" placeholder="example@site.com">
+           </div>
+           <!------------------------------------------------------------>
+
+           <!--Ask for message from user-->
+           <div class="contactDeets" id="userMessage">
+            <label for="message">Enter your Message Here:</label>
+            <textarea id="message" rows="25" cols="60"></textarea>
+           </div>
+       </fieldset>
+       <br>
+       <input type="submit" id="submit">
+       <a href="./profile.html" class="goBack">Go back to creator profile</a>
+   </form>
+</body>
+</html>
